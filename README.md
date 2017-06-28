@@ -17,7 +17,7 @@ As for command line, use "mpic++".
 ## 1) Run with Eclipse
 To run with Eclipse, you need to install MPICH and set the library and path correctly. Then in "run configuration", set the application to "your_related_path/mpirun". In "Arguments", write "-np 4 ${workspace_loc:MPI_rebalance_application_cpp}/Debug/MPI_rebalance_application_cpp". This represent the program will run with 4 processes. As we form a "master-slave" pattern in this program, at least 2 processes should be created. 
 
-##2) Run with command line
+## 2) Run with command line
 To run with command line, you could use the following command if you are in the "MPI_rebalance_application_cpp" folder.
 mpirun -np 4 Debug/MPI_rebalance_application_cpp
 Or if you compile the program in other places, use the similar command.
