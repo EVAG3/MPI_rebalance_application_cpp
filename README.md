@@ -2,7 +2,7 @@
 Author : Yu Zhang
 
 # 1. Expected user case
-This application simulate how to balance the work dynamicly among different MPI processes where each process is assigned unbalanced work initially. In detail, the load balancer form a "master and slave" pattern. And the master dynamicly find the free slaves to assign the tasks to them. A sleep function is added to simulate that different severs may have differnt performance. So some slaves may finish many tasks according to their ability, which is much better than static assignment. 
+This application simulate how to balance the work dynamiclly among different MPI processes where each process is assigned unbalanced work initially. In detail, the load balancer form a "master and slave" pattern. And the master dynamiclly find the free slaves to assign the tasks to them. In other words, as long as a slave is free, a new task is assgined to this slave. A sleep function is added to simulate that different severs may have differnt performance. So some slaves may finish many tasks according to their ability, which is much better than static assignment. 
 
 # 2. Compile environment
 ## 1) Linux and Windows
